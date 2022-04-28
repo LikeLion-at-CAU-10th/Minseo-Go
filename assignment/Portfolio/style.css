@@ -1,0 +1,204 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Orbitron:wght@500;600&display=swap");
+/* Global */
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+ol,
+ul {
+  list-style: none;
+}
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: 0;
+  padding: 0;
+}
+a {
+  outline: 0;
+  text-decoration: none;
+  color: #fff;
+}
+
+body.dark {
+  background-color: #282828;
+  color: #fff;
+}
+.darkmode {
+  width: 10%;
+}
+.label {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 50px;
+  height: 26px;
+  background-color: black;
+  border-radius: 50px;
+  transform: scale(1.5);
+  position: relative;
+}
+.ball {
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  top: 2px;
+  left: 2px;
+  transition: transform 0.2s ease-out;
+}
+.checkbox:checked + .label .ball {
+  /* checked가 된다면 + .label & .ball이 아래 조건을 수행한다 */
+  transform: translateX(24px);
+}
+.checkbox {
+  position: absolute;
+  opacity: 0;
+}
+.fa-moon {
+  color: #f1c40f;
+}
+.fa-sun {
+  color: #f39c12;
+}
+
+/* Header */
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #212121;
+  padding: 3% 0%;
+  z-index: 1;
+}
+.logo {
+  margin-left: 4%;
+  font-size: 24px;
+}
+.menu {
+  display: flex;
+  margin-left: 10%;
+}
+.menu_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+  margin-right: 20%;
+  font-size: 18px;
+  color: #fff;
+}
+
+
+/* Home */
+.home {
+  text-align: center;
+  background-color: #282828;
+}
+
+.context {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  background-image: url("/image/intro.png");
+  background-size: cover;
+  height:500px;
+}
+
+.context h1{
+  font-size:50px;
+}
+
+
+/* About */
+.about {
+  margin: 40px 0px;
+  display: flex;
+  justify-content: space-around;
+}
+.about h1 {
+  text-align: center;
+  margin-top: 8px;
+}
+.about__introduce {
+  margin-top: 12px;
+}
+
+.about__introduce img {
+  width: 300px;
+  height: 300px;
+}
+
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  margin-bottom: 12px;
+}
+
+.timeline p {
+  font-size: 25px;
+
+}
+
+/* best */
+
+.best {
+  background-color: #282828;
+  color: #fff;
+  padding: 20px 0px;
+}
+.best h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.favorite {
+  display:flex;
+  justify-content: space-evenly;
+}
+
+.favorite_food img {
+  object-fit: cover;
+  width: 300px;
+}
+.favorite_food h3 {
+  text-align: center;
+}
+.favorite_family img {
+  object-fit: cover;
+  width: 300px;
+}
+.favorite_family h3 {
+  text-align: center;
+}
+.favorite_cute img {
+  object-fit: cover;
+  width: 300px;
+}
+.favorite_cute h3 {
+  text-align: center;
+}
+
+
+/* Contact */
+.contact {
+  margin: 48px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.contact__title {
+  margin-bottom: 12px;
+}
+.contact__links i {
+  font-size: 60px;
+  color:orange;
+  margin: 12px;
+}
