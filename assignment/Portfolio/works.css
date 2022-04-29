@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  ol,
+  ul {
+    list-style: none;
+  }
+  button {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+  }
+
+/* darkmode */
+body.dark {
+    background-color: #515151;
+    color: #fff;
+  }
+  .darkmode {
+    padding:25px;
+    width: 10%;
+  }
+  .label {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50px;
+    height: 26px;
+    background-color: black;
+    border-radius: 50px;
+    transform: scale(1.5);
+    position: relative;
+  }
+  .ball {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.2s ease-out;
+  }
+  .checkbox:checked + .label .ball {
+    /* checked가 된다면 + .label & .ball이 아래 조건을 수행한다 */
+    transform: translateX(24px);
+  }
+  .checkbox {
+    position: absolute;
+    opacity: 0;
+  }
+  .fa-moon {
+    color: #f1c40f;
+  }
+  .fa-sun {
+    color: #f39c12;
+  }
+
+/* nav */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    z-index: 1;
+  }
+  
+  .menu {
+    display: flex;
+    margin-left: 36.5%;
+  }
+  .menu_item {
+    text-decoration-line: none;
+    font-family: 'Palanquin Dark', sans-serif;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+  }
+  
+  .menu_item:hover {
+    color:rgb(255, 239, 97);
+  }
+
+/* works */
+.works {
+font-family: 'Palanquin Dark', sans-serif;
+color: rgb(0, 0, 0);
+padding: 20px;
+}
+
+.works h1 {
+text-align: center;
+margin-bottom: 20px;
+}
+
+.DESIGN {
+display:flex;
+justify-content: space-evenly;
+border-top: dotted 5px;
+border-bottom: dotted 5px;
+}
+  
+  
+  .design-1 img {
+  object-fit: cover;
+  width: 300px;
+  padding-top: 40px;
+  }
+  .design-1 h3 {
+  text-align: center;
+  }
+  .design-2 img {
+  object-fit: cover;
+  width: 300px;
+  padding-top: 15px;
+  }
+  .design-2 h3 {
+  text-align: center;
+  padding-bottom: 10px;
+  }
+  .design-3 img {
+  object-fit: cover;
+  width: 300px;
+  padding-top: 15px;
+  }
+  .design-3 h3 {
+  text-align: center;
+  padding-bottom:10px;
+  }
+
+.IDEA {
+display:flex;
+justify-content: space-evenly;
+border-bottom: dotted 5px;
+}
+
+
+.idea-1 img {
+object-fit: cover;
+width: 300px;
+}
+.idea-1 h3 {
+text-align: center;
+padding-bottom:20px;
+}
+.idea-2 img {
+object-fit: cover;
+width: 300px;
+padding-top: 30px;
+}
+.idea-2 h3 {
+text-align: center;
+}
+.idea-3 img {
+object-fit: cover;
+width: 300px;
+padding-top: 50px;
+}
+.idea-3 h3 {
+text-align: center;
+
+}
+
+.NOW{
+  display: flex;
+  justify-content: center;
+}
+.now img{
+  height:300px;
+}
+.now h3 {
+  text-align: center;
+  }
+
+  /* Contact */
+  .contact {
+    font-size: 20px;
+    color:white;
+    background-color:#515151;
+    font-family: 'Palanquin Dark', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .contact__title {
+    margin-top: 20px;
+    margin-bottom: 12px;
+  }
+  
+  .contact__links {
+    margin-bottom: 20px;
+    display:flex;
+    align-items: center;
+  }
+  
+  .icon2 {
+    margin-bottom: 15px;
+  }
+
