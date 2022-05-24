@@ -45,8 +45,8 @@ views.py 유저들이 볼 수 있는 공간
    
 - django-admin startapp footprint : foorprint라는 앱(프로젝트 하위에서 기능별로 구분하는 단위) 만들기
 
-set![app](https://user-images.githubusercontent.com/101655617/170074715-9edc217c-c6b8-4d55-815a-730e25d9b378.png)
-- tings.py에 생성한 app 등록
+[app](https://user-images.githubusercontent.com/101655617/170074715-9edc217c-c6b8-4d55-815a-730e25d9b378.png)
+- settings.py에 생성한 app 등록
 - urls.py에 foorprint views 함수 등록
 - footprint 폴더의 views.py에 footprint_GET, footprint_POST 함수 정의
 - footprint 폴더의 models.py에 Footprint Database 모델 정의
