@@ -44,13 +44,20 @@ urls.py를 설정해서 사람들이 직접 볼 수 있게 url을 지정
 views.py 유저들이 볼 수 있는 공간   
    
 - django-admin startapp footprint : foorprint라는 앱(프로젝트 하위에서 기능별로 구분하는 단위) 만들기
-![app](https://user-images.githubusercontent.com/101655617/170074941-7aebfca7-aefb-4bb1-922d-71b28a01d73e.png)
-
 - settings.py에 생성한 app 등록
+<img width="395" alt="image" src="https://user-images.githubusercontent.com/101655617/170076342-a887acc2-d4cb-4c2e-a4be-9441a2807f77.png">
+   
 - urls.py에 foorprint views 함수 등록
+<img width="616" alt="image" src="https://user-images.githubusercontent.com/101655617/170075512-608d6ce7-3ed1-40a2-98fe-57a75a41cacd.png">
+   
 - footprint 폴더의 views.py에 footprint_GET, footprint_POST 함수 정의
+<img width="783" alt="image" src="https://user-images.githubusercontent.com/101655617/170077138-1a57dacd-b960-46a5-a551-775b8691adee.png">
+
+   
 - footprint 폴더의 models.py에 Footprint Database 모델 정의
 - views.py/footprint_GET 함수 & POST 함수
+<img width="891" alt="image" src="https://user-images.githubusercontent.com/101655617/170076846-815a069a-ba1b-49f3-a623-2025a12a9389.png">
+   
    
 이렇게 하면 시행이 된다고 한다 ...ㅎㅎ   
 차근차근 이해해보면서 채워가봐야겠다:)
