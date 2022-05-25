@@ -51,10 +51,10 @@ views.py 유저들이 볼 수 있는 공간
 <img width="616" alt="image" src="https://user-images.githubusercontent.com/101655617/170075512-608d6ce7-3ed1-40a2-98fe-57a75a41cacd.png">
    
 - footprint 폴더의 views.py에 footprint_GET, footprint_POST 함수 정의
-<img width="783" alt="image" src="https://user-images.githubusercontent.com/101655617/170077138-1a57dacd-b960-46a5-a551-775b8691adee.png">
-
    
 - footprint 폴더의 models.py에 Footprint Database 모델 정의
+<img width="783" alt="image" src="https://user-images.githubusercontent.com/101655617/170077138-1a57dacd-b960-46a5-a551-775b8691adee.png">
+   
 - views.py/footprint_GET 함수 & POST 함수
 <img width="891" alt="image" src="https://user-images.githubusercontent.com/101655617/170076846-815a069a-ba1b-49f3-a623-2025a12a9389.png">
    
